@@ -126,6 +126,12 @@ void loop() {
 
 //will display which cat is outside
 void whoOutside() {
+  //clear the LED Bar
+  Serial.println("LEDs off...");
+  for(int j = 0; j <= 10; j++){
+    bar.setLed(j,0);
+  }
+  
   //if silver is light up the left side grey
   Serial.println("whoOutside called...");
   if(silver) {
