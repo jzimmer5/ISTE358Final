@@ -70,7 +70,7 @@ void loop() {
   char cmd;
 
   //check to see if the door that the magnetic switch is attached to is opened
-  if(digitalRead(magSwitch) == 1) {
+  if(digitalRead(magSwitch) == 0) {
     doorOpened = true;
     timerStart += millis();
     Serial.print("mag Activated ");
